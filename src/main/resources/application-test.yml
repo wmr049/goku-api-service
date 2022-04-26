@@ -1,0 +1,12 @@
+#banco de dados em memoria
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbcDriver
+    url: 'jdbc:hsqldb:mem:.'
+    username: sa
+    password:
+
+  # Configuração do Flyway
+  flyway:
+    enabled: true
+    :locations: 'classpath:db/migration/hsql'

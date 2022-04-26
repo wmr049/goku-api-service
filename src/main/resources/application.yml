@@ -1,0 +1,14 @@
+server:
+  port: 8085
+  application:
+    name: goku-api-service
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:25432/goku_adm
+    username: goku_adm
+    password: goku_adm
+
+logging:
+  level:
+    root: info
+    org.springframework.cloud.config: DEBUG

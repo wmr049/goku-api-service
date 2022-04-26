@@ -8,15 +8,36 @@ group = 'com.goku'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'junit:junit:4.13.1'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	//tag:test[]
+	testImplementation 'org.hsqldb:hsqldb'
+	testImplementation 'org.mockito:mockito-core:4.5.1'
+	testImplementation 'io.rest-assured:rest-assured:4.4.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	//end:test[]
+
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
+compileJava.options.encoding = 'Cp1252'
+compileTestJava.options.encoding = 'Cp1252'
+javadoc.options.encoding = 'Cp1252'
