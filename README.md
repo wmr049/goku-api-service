@@ -1,7 +1,7 @@
-# API Cadastro de Clientes
+# API Cadastro de Gerenciamento ecom GOKU
 
 ## Descrição
-Uma simples API que simula um cadastro básico de clientes.
+Uma simples API que simula um cadastro básico de usuario e busca de endereços.
 
 ## Funcionalidades
 
