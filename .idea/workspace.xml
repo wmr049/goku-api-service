@@ -5,40 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92809c1e-7209-42da-af0b-498feb0d8d99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/dto/response/EstadoResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Estado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/EstadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/EstadoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/impl/EstadoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/clean-database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__criar_tabela_pais.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__criar_tabela_estado.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__criar_tabela_tipo_localidade.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__criar_tabela_localidade.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V5__criar_tabela_bairro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V6__criar_tabela_tipo_logradouro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V7__criar_tabela_logradouro.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/load-database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/service/impl/EstadoServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/dto/response/LocalidadeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Bairro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Localidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Logradouro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/TipoLocalidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/TipoLogradouro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/BairroRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/LocalidadeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/LogradouroRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/PaisRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/filtro/EstadoFiltro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/filtro/LocalidadeFiltro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/filtro/PaisFiltro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/helper/EstadoRepositoryQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/helper/LocalidadeRepositoryQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/helper/PaisRepositoryQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/LocalidadeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/LogradouroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/impl/LocalidadeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/impl/LogradouroServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/dto/request/UsuarioRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/dto/response/UsuarioResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/entity/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/user/service/imp/UsuariosServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/BaseServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/EstadoNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/LocalidadeNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/LogradouroNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/UnicidadeEstadoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/UnicidadePaisEstadoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/exception/UserPermissionsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/config/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/mapper/UsuarioMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/JWTAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/JWTUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/UserAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/dto/CredentialsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/infraestructure/security/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/api/EstadoApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/api/LocalidadeApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/api/LogradouroApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/api/UsuarioApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/controller/EstadoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/controller/LocalidadeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/controller/LogradouroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/in/controller/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/postmon/PostmonClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/postmon/PostmonClientHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/postmon/PostmonClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/republicavirtual/RepublicaVirtualClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/republicavirtual/RepublicaVirtualClientHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/republicavirtual/RepublicaVirtualClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/viacep/ViaCepClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/viacep/ViaCepClientFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/viacep/ViaCepClientHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/viacep/ViaCepClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/widenet/WideNetClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/widenet/WideNetClientHystrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/widenet/WideNetClientImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/ConsultaCepProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/LogradouroProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/dto/Postmon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/dto/RepublicaVirtual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/dto/ViaCep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/dto/WideNet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/impl/LogradouroProxyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/impl/PostmonProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/impl/RepublicaVirtualProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/impl/ViaCepProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/proxy/service/impl/WideNetProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/AddressServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/repository/BairroRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/repository/EstadoRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/repository/LocalidadeRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/repository/PaisRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/service/impl/LocalidadeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/service/impl/LogradouroServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/in/controller/EstadoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/in/controller/LocalidadeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/in/controller/LogradouroControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/postmon/PostmonClientImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/republicavirtual/RepublicaVirtualClientImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/viacep/ViaCepClientImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/widenet/WideNetClientImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/proxy/service/impl/LogradouroProxyImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/apiservice/GokuApiServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/goku/apiservice/GokuApiServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/GokuApiServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/GokuApiServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/dto/response/EstadoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/dto/response/EstadoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/entity/Pais.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/EstadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/repository/EstadoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/EstadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/EstadoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/impl/EstadoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/goku/domain/address/service/impl/EstadoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/load-database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/load-database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/goku/GokuApiServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/service/impl/EstadoServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/goku/domain/address/service/impl/EstadoServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/goku/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/goku/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +130,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="goku-api-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -64,6 +148,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -72,27 +157,47 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28Ivf31MwjNgwUJclXOTP4ueY3W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "/home/milton/projetos/eai/goku-api-service/src/main/java/com/goku/domain/address/service/impl",
-    "last_opened_file_path": "/home/milton/projetos/pagseguro/benefits-financial",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/tqi_mreis/projeto/pessoal/goku-api-service/src/main/java/com/goku/domain/address/service/impl&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tqi_mreis/projeto/pessoal/cadastro-clientes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.goku.domain.address.service.impl" />
       <recent name="com.goku.domain.address.entity" />
       <recent name="com.goku.domain.address.repository" />
     </key>
@@ -104,10 +209,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.goku.domain.address.service.impl" />
+      <recent name="com.goku.interfaces.in.controller" />
+      <recent name="com.goku.interfaces.out.api.widenet" />
+      <recent name="com.goku.interfaces.out.api.viacep" />
+      <recent name="com.goku.interfaces.out.api.republicavirtual" />
+      <recent name="com.goku.interfaces.out.api.postmon" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'goku-api-service'">
+  <component name="RunManager">
     <configuration name="goku-service" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -117,39 +226,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests in 'goku-api-service'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
-        <extension name="coverage" runner="jacoco" />
-      </EXTENSION>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.goku-service" />
-      <item itemvalue="Gradle.Tests in 'goku-api-service'" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.Tests in 'goku-api-service'" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,6 +248,32 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/proxy/service/impl/LogradouroProxyImplTest.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/widenet/WideNetClientImplTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/goku/interfaces/out/api/widenet/WideNetClientImplTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/goku/interfaces/out/api/widenet/WideNetClientImpl.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

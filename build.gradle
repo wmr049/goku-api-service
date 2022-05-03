@@ -1,12 +1,13 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.7'
+	id 'org.springframework.boot' version '2.4.2'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
 group = 'com.goku'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = 11
+targetCompatibility = 11
 
 configurations {
 	compileOnly {
@@ -18,25 +19,50 @@ repositories {
 	mavenCentral()
 }
 
+ext['springCloudVersion'] = 'Hoxton.SR7'
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+
+	implementation 'org.mapstruct:mapstruct:1.4.1.Final'
+	implementation 'org.springframework.security:spring-security-core:5.6.2'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	implementation 'org.springframework.security:spring-security-core'
+	implementation "io.jsonwebtoken:jjwt:0.9.1"
+	implementation "org.json:json:20200518"
+
+	implementation "io.springfox:springfox-swagger2:${springfoxVersion}"
+	implementation "io.springfox:springfox-swagger-ui:${springfoxVersion}"
+
+	implementation "org.springframework.cloud:spring-cloud-starter-openfeign:2.2.5.RELEASE"
+	implementation "io.github.openfeign:feign-jackson:10.1.0"
+	implementation 'io.github.openfeign:feign-okhttp:10.1.0'
+
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.flywaydb:flyway-core'
-	implementation 'junit:junit:4.13.1'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'org.postgresql:postgresql'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	annotationProcessor 'org.projectlombok:lombok'
+	implementation('org.springframework.boot:spring-boot-starter-actuator'){
+		exclude group: 'io.micrometer', module: 'micrometer-core'
+	}
 
 	//tag:test[]
-	testImplementation 'org.hsqldb:hsqldb'
-	testImplementation 'org.mockito:mockito-core:4.5.1'
+	testImplementation "org.mockito:mockito-core:3.11.2"
 	testImplementation 'io.rest-assured:rest-assured:4.4.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation "junit:junit:4.12"
 	//end:test[]
-
 }
+
 
 compileJava.options.encoding = 'Cp1252'
 compileTestJava.options.encoding = 'Cp1252'
