@@ -24,7 +24,7 @@ public class LogradouroServiceImpl implements LogradouroService {
     @Override
     public Logradouro filtrarPorCep(String cep) throws LogradouroNaoEncontradoException {
         usuarioService.isAdmin();
-        
+
         final Optional<Logradouro> optional = logradouroRepository.findByCep(cep);
 
         if(!optional.isPresent()) {
